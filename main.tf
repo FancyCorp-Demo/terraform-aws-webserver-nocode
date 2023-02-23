@@ -1,21 +1,3 @@
-# Use https://www.terraform.io/cloud for our State
-terraform {
-  cloud {
-    organization = "fancycorp"
-
-    workspaces {
-      tags = ["webserver", "platform:aws"]
-    }
-  }
-
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.0"
-    }
-  }
-}
-
 provider "aws" {
   default_tags {
     tags = {
