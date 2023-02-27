@@ -6,7 +6,7 @@ provider "aws" {
       Purpose   = "Terraform TFC Demo Org (FancyCorp)"
       TTL       = "24h"
       Terraform = "true"
-      Source    = "https://github.com/FancyCorp-Demo/tf-workspace-aws-webserver"
+      Source    = "https://github.com/FancyCorp-Demo/terraform-aws-webserver-nocode"
       Workspace = terraform.workspace
     }
   }
