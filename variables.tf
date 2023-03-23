@@ -20,3 +20,8 @@ variable "aws-region" {
   type    = string
   default = "eu-west-2"
 }
+
+variable "name" {
+  type        = string
+  description = "A name to identify the your Webserver"
+}
