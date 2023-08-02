@@ -2,7 +2,7 @@ provider "aws" {
   default_tags {
     tags = {
       Name      = "${var.name} - ${terraform.workspace}"
-      Owner     = "lucy.davinhart@hashicorp.com"
+      Owner     = var.owner
       Purpose   = "Terraform TFC Demo Org (FancyCorp)"
       TTL       = "24h"
       Terraform = "true"
